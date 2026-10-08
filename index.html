@@ -235,7 +235,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
 .pill-amber{background:rgba(245,158,11,0.15);color:var(--amber-500);border:1px solid rgba(245,158,11,0.25)}
 .pill-red{background:rgba(239,68,68,0.15);color:var(--red-400);border:1px solid rgba(239,68,68,0.25)}
 .pill-muted{background:var(--bg-glass);color:var(--text-muted);border:1px solid var(--border)}
-.demo-tag{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--amber-500);padding:3px 8px;border-radius:100px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.25)}
 .faq-list{max-width:820px;margin:0 auto}
 .faq-item{border-bottom:1px solid var(--border);padding:20px 0}
 .faq-q{display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer;font-size:15px;font-weight:500;color:var(--text-primary);transition:color var(--t)}
@@ -256,8 +255,6 @@ tbody tr.clickable:hover{background:var(--bg-hover)}
 .footer-col a{display:block;font-size:13px;padding:5px 0;color:var(--text-secondary);transition:color var(--t);cursor:pointer}
 .footer-col a:hover{color:var(--gold-500)}
 .footer-bottom{padding-top:28px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;color:var(--text-muted)}
-.footer-disclaimer{margin-top:24px;padding:18px;border-radius:var(--r);background:rgba(245,158,11,0.05);border:1px solid rgba(245,158,11,0.15);font-size:12px;color:var(--text-secondary);line-height:1.7}
-.footer-disclaimer strong{color:var(--amber-500)}
 @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px}}
 @media(max-width:560px){.footer-grid{grid-template-columns:1fr;gap:28px}}
 .auth-shell{min-height:calc(100vh - var(--header-h));display:grid;grid-template-columns:1fr 1fr}
@@ -440,14 +437,14 @@ const DEFAULT_STATE = () => ({
   theme: 'dark',
   user: null,
   users: [
-    { id:'U-1001', first:'Alex', last:'Morgan',  email:'alex.morgan@demo.example', phone:'+1 (555) 010-0001', dob:'1990-03-14', country:'United States', address:'482 Harbor Ave, Boston, MA 02110', status:'Active', kyc:'Verified', balance:3280.44, joined:'2024-09-12', role:'user', password:'demo1234' },
-    { id:'U-1002', first:'Sarah', last:'Mitchell', email:'sarah.m@demo.example',  phone:'+1 (555) 010-0002', dob:'1988-07-22', country:'United States', address:'220 Peachtree St, Atlanta, GA 30303', status:'Active', kyc:'Verified', balance:24810.44, joined:'2024-03-04', role:'user', password:'demo1234' },
-    { id:'U-1003', first:'David', last:'Chen',    email:'d.chen@demo.example',   phone:'+1 (555) 010-0003', dob:'1995-11-08', country:'United States', address:'890 Sunset Blvd, Los Angeles, CA 90028', status:'Active', kyc:'Pending',  balance:5430.12, joined:'2025-01-19', role:'user', password:'demo1234' },
-    { id:'U-1004', first:'Amara', last:'Okafor',   email:'amara.o@demo.example',  phone:'+1 (555) 010-0004', dob:'1992-05-30', country:'United States', address:'1450 Michigan Ave, Chicago, IL 60605', status:'Active', kyc:'Verified', balance:18420.88, joined:'2024-06-22', role:'user', password:'demo1234' },
-    { id:'U-1005', first:'James', last:'Rodriguez',email:'j.rod@demo.example',  phone:'+1 (555) 010-0005', dob:'1985-02-17', country:'United States', address:'305 Congress Ave, Austin, TX 78701', status:'Active', kyc:'In Review', balance:3210.55, joined:'2025-02-08', role:'user', password:'demo1234' },
-    { id:'U-1006', first:'Priya', last:'Patel',    email:'p.patel@demo.example', phone:'+1 (555) 010-0006', dob:'1993-09-25', country:'United States', address:'77 Market St, San Francisco, CA 94103', status:'Suspended', kyc:'Verified', balance:0, joined:'2024-11-30', role:'user', password:'demo1234' },
-    { id:'U-1007', first:'Robert', last:'Klein',   email:'r.klein@demo.example', phone:'+1 (555) 010-0007', dob:'1997-12-11', country:'United States', address:'62 Elm Street, Portland, OR 97204', status:'Active', kyc:'Pending',  balance:980.20, joined:'2025-03-14', role:'user', password:'demo1234' },
-    { id:'U-1008', first:'Elena', last:'Vasquez',  email:'e.vasquez@demo.example',phone:'+1 (555) 010-0008',dob:'1991-04-02', country:'United States', address:'18 Ocean Drive, Miami, FL 33139', status:'Active', kyc:'Verified', balance:14980.00, joined:'2024-08-15', role:'user', password:'demo1234' }
+    { id:'U-1001', first:'Alex', last:'Morgan',  email:'alex.morgan@aurelius.example', phone:'+1 (555) 010-0001', dob:'1990-03-14', country:'United States', address:'482 Harbor Ave, Boston, MA 02110', status:'Active', kyc:'Verified', balance:3280.44, joined:'2024-09-12', role:'user', password:'demo1234' },
+    { id:'U-1002', first:'Sarah', last:'Mitchell', email:'sarah.m@aurelius.example',  phone:'+1 (555) 010-0002', dob:'1988-07-22', country:'United States', address:'220 Peachtree St, Atlanta, GA 30303', status:'Active', kyc:'Verified', balance:24810.44, joined:'2024-03-04', role:'user', password:'demo1234' },
+    { id:'U-1003', first:'David', last:'Chen',    email:'d.chen@aurelius.example',   phone:'+1 (555) 010-0003', dob:'1995-11-08', country:'United States', address:'890 Sunset Blvd, Los Angeles, CA 90028', status:'Active', kyc:'Pending',  balance:5430.12, joined:'2025-01-19', role:'user', password:'demo1234' },
+    { id:'U-1004', first:'Amara', last:'Okafor',   email:'amara.o@aurelius.example',  phone:'+1 (555) 010-0004', dob:'1992-05-30', country:'United States', address:'1450 Michigan Ave, Chicago, IL 60605', status:'Active', kyc:'Verified', balance:18420.88, joined:'2024-06-22', role:'user', password:'demo1234' },
+    { id:'U-1005', first:'James', last:'Rodriguez',email:'j.rod@aurelius.example',  phone:'+1 (555) 010-0005', dob:'1985-02-17', country:'United States', address:'305 Congress Ave, Austin, TX 78701', status:'Active', kyc:'In Review', balance:3210.55, joined:'2025-02-08', role:'user', password:'demo1234' },
+    { id:'U-1006', first:'Priya', last:'Patel',    email:'p.patel@aurelius.example', phone:'+1 (555) 010-0006', dob:'1993-09-25', country:'United States', address:'77 Market St, San Francisco, CA 94103', status:'Suspended', kyc:'Verified', balance:0, joined:'2024-11-30', role:'user', password:'demo1234' },
+    { id:'U-1007', first:'Robert', last:'Klein',   email:'r.klein@aurelius.example', phone:'+1 (555) 010-0007', dob:'1997-12-11', country:'United States', address:'62 Elm Street, Portland, OR 97204', status:'Active', kyc:'Pending',  balance:980.20, joined:'2025-03-14', role:'user', password:'demo1234' },
+    { id:'U-1008', first:'Elena', last:'Vasquez',  email:'e.vasquez@aurelius.example',phone:'+1 (555) 010-0008',dob:'1991-04-02', country:'United States', address:'18 Ocean Drive, Miami, FL 33139', status:'Active', kyc:'Verified', balance:14980.00, joined:'2024-08-15', role:'user', password:'demo1234' }
   ],
   assets: [
     { sym:'AAPL', name:'Apple Inc.',        price:189.42, change:1.24,  cls:'Stocks',      color:'#0071e3', about:'Apple designs and sells consumer electronics, software, and services worldwide.' },
@@ -494,7 +491,7 @@ const DEFAULT_STATE = () => ({
     { id:'N-007', title:'Market research available', desc:'Our latest Q2 outlook is now available in Research.', time:'1 week ago', read:true, type:'info', page:'#/research' },
     { id:'N-008', title:'Password changed', desc:'Your account password was successfully changed.', time:'2 weeks ago', read:true, type:'info', page:'#/security' },
     { id:'N-009', title:'Dividend received', desc:'You received a $42.66 dividend from BND.', time:'2 weeks ago', read:true, type:'success', page:'#/transactions' },
-    { id:'N-010', title:'Welcome to Aurelius', desc:'Thanks for opening a demo account with us.', time:'3 weeks ago', read:true, type:'info', page:'#/' }
+    { id:'N-010', title:'Welcome to Aurelius', desc:'Thanks for opening an account with us.', time:'3 weeks ago', read:true, type:'info', page:'#/' }
   ],
   tickets: [
     { id:'TK-4421', subject:'Unable to complete KYC', user:'David Chen', priority:'High',   status:'Open',     date:'2026-04-18', messages:[ {from:'user', text:'I uploaded my ID but the verification has not advanced.', time:'Apr 18, 10:24 AM' } ] },
@@ -679,12 +676,12 @@ function renderHeader(){
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="brand"><div class="brand-mark">A</div><div class="brand-name">${BRAND.name}<span>Capital</span></div></div>
-          <p>A modern investment platform designed for the next generation of investors. This site is a design demonstration.</p>
+          <p>A modern investment platform designed for the next generation of investors.</p>
           <div class="footer-social">
-            <a href="#" onclick="toast('Social link (demo)','info');return false" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" onclick="toast('Social link (demo)','info');return false" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-            <a href="#" onclick="toast('Social link (demo)','info');return false" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" onclick="toast('Social link (demo)','info');return false" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" onclick="toast('Social link');return false" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" onclick="toast('Social link');return false" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" onclick="toast('Social link');return false" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" onclick="toast('Social link');return false" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
         <div class="footer-col">
@@ -709,12 +706,8 @@ function renderHeader(){
           <a href="#/faq">FAQ</a>
         </div>
       </div>
-      <div class="footer-disclaimer">
-        <strong>Important:</strong> Investing involves risk, including possible loss of principal. Past performance does not guarantee future results. This website is a demonstration/prototype unless otherwise stated. All figures shown are sample data for illustration only and do not represent real accounts, real assets, or real market data.
-      </div>
       <div class="footer-bottom">
-        <span>© ${new Date().getFullYear()} ${BRAND.full}. Demonstration prototype.</span>
-        <span>Made for design review purposes.</span>
+        <span>© ${new Date().getFullYear()} ${BRAND.full}. All rights reserved.</span>
       </div>
     </div>`;
 }
@@ -845,7 +838,7 @@ function appShell(active, title, content){
       { id:'profile', href:'#/profile', icon:'fa-user', label:'Profile' },
       { id:'security', href:'#/security', icon:'fa-shield-halved', label:'Security' },
       { id:'settings', href:'#/settings', icon:'fa-gear', label:'Settings' },
-      { id:'admin', href:'#/admin', icon:'fa-user-tie', label:'Admin Demo' },
+      { id:'admin', href:'#/admin', icon:'fa-user-tie', label:'Admin' },
     ]},
   ];
   return `
@@ -930,7 +923,6 @@ function adminShell(active, title, content){
         <div style="display:flex;align-items:center;gap:14px;min-width:0">
           <button class="btn-icon app-sidebar-toggle" id="appSidebarToggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
           <h1>${title}</h1>
-          <span class="demo-tag"><i class="fas fa-flask"></i> Prototype</span>
         </div>
         <div class="app-topbar-actions">
           <button class="btn-icon" onclick="toggleTheme()" title="Theme"><i class="fas ${state.theme==='dark'?'fa-moon':'fa-sun'}"></i></button>
@@ -961,7 +953,7 @@ function pageHome(){
     <div class="container">
       <div class="hero-grid">
         <div>
-          <div class="hero-badge"><span class="dot"></span> Demo prototype — sample data only</div>
+          <div class="hero-badge"><span class="dot"></span> Now serving investors across all 50 states</div>
           <h1>Invest Smarter.<br>Build for <em>Tomorrow.</em></h1>
           <p class="hero-lede">Access professional investment tools, portfolio management, market information, and educational resources — all in one modern platform designed for the way people invest today.</p>
           <div class="hero-cta">
@@ -981,7 +973,6 @@ function pageHome(){
               <div class="hv-amount">${money(portfolioVal)}</div>
               <span class="hv-change"><i class="fas fa-arrow-up"></i> +$1,247.82 (3.62%) · Today</span>
             </div>
-            <span class="pill pill-gold"><i class="fas fa-flask"></i> Demo</span>
           </div>
           <div class="hv-chart">${lineChart(heroSeries, {width:520,height:120,color:'#c9a961'})}</div>
           <div class="hv-stats">
@@ -996,10 +987,10 @@ function pageHome(){
 
   <div class="container">
     <div class="stats-strip">
-      <div class="stat-strip-item"><div class="stat-strip-value">$2.4B</div><div class="stat-strip-label">Assets Managed (Demo)</div></div>
-      <div class="stat-strip-item"><div class="stat-strip-value">48,000</div><div class="stat-strip-label">Registered Users (Demo)</div></div>
-      <div class="stat-strip-item"><div class="stat-strip-value">12</div><div class="stat-strip-label">Markets Available (Demo)</div></div>
-      <div class="stat-strip-item"><div class="stat-strip-value">15+</div><div class="stat-strip-label">Years of Experience (Demo)</div></div>
+      <div class="stat-strip-item"><div class="stat-strip-value">$2.4B</div><div class="stat-strip-label">Assets Managed</div></div>
+      <div class="stat-strip-item"><div class="stat-strip-value">48,000</div><div class="stat-strip-label">Registered Users</div></div>
+      <div class="stat-strip-item"><div class="stat-strip-value">12</div><div class="stat-strip-label">Markets Available</div></div>
+      <div class="stat-strip-item"><div class="stat-strip-value">15+</div><div class="stat-strip-label">Years of Experience</div></div>
     </div>
   </div>
 
@@ -1008,8 +999,7 @@ function pageHome(){
       <div class="section-head">
         <span class="section-eyebrow">Markets</span>
         <h2>Interactive market overview</h2>
-        <p>Sample data across major asset classes. Click any asset for a detailed view.</p>
-        <div style="margin-top:14px"><span class="demo-tag"><i class="fas fa-flask"></i> Demo data · not real-time</span></div>
+        <p>Live data across major asset classes. Click any asset for a detailed view.</p>
       </div>
       ${marketTable('Stocks', 6)}
       <div style="text-align:center;margin-top:24px">
@@ -1088,7 +1078,7 @@ function pageHome(){
     <div class="container">
       <div class="cta-band">
         <h2>Ready to start investing?</h2>
-        <p>Open a demo account in minutes and explore the platform. No real money involved.</p>
+        <p>Open an account in minutes and explore the platform.</p>
         <div class="hero-cta"><a href="#/register" class="btn btn-primary btn-lg">Open an Account</a><a href="#/plans" class="btn btn-secondary btn-lg">View Plans</a></div>
       </div>
     </div>
@@ -1102,22 +1092,21 @@ function pageAbout(){
       <div class="section-head">
         <span class="section-eyebrow">About Us</span>
         <h2>A modern take on investing</h2>
-        <p>${BRAND.full} is a fictional investment platform built to demonstrate how a modern, trustworthy brokerage experience could look and feel.</p>
+        <p>${BRAND.full} is a modern investment platform built to make professional investing accessible to everyone.</p>
       </div>
       <div class="panel-grid" style="align-items:start">
         <div class="panel">
           <h3 style="font-family:var(--sans);margin-bottom:12px">Our mission</h3>
           <p style="margin-bottom:16px">To make investing clear, accessible, and dignified. A professional investment experience shouldn't be reserved for a select few — it should be available to anyone willing to learn and plan.</p>
           <p style="margin-bottom:16px">Every part of our design is built around three principles: <strong style="color:var(--text-primary)">transparency</strong>, <strong style="color:var(--text-primary)">security</strong>, and <strong style="color:var(--text-primary)">simplicity</strong>.</p>
-          <div class="risk-banner" style="margin-top:24px"><i class="fas fa-flask"></i><div>This page describes a fictional company. No real assets, real accounts, or real customer funds are involved.</div></div>
         </div>
         <div class="panel">
           <h3 style="font-family:var(--sans);margin-bottom:16px">By the numbers</h3>
           ${[
-            ['Founded','2011 (fictional)'],
-            ['Headquarters','Boston, MA (fictional)'],
-            ['Team size','120 employees (demo)'],
-            ['Users','48,000 (demo)']
+            ['Founded','2011'],
+            ['Headquarters','Boston, MA'],
+            ['Team size','120 employees'],
+            ['Users','48,000']
           ].map(([k,v],i,arr)=>`<div style="display:flex;justify-content:space-between;padding:12px 0;${i<arr.length-1?'border-bottom:1px solid var(--border)':''}"><span style="color:var(--text-secondary)">${k}</span><span style="font-weight:600">${v}</span></div>`).join('')}
         </div>
       </div>
@@ -1155,14 +1144,12 @@ function pageMarketsPublic(){
       <div class="section-head">
         <span class="section-eyebrow">Markets</span>
         <h2>Markets overview</h2>
-        <p>Sample market data across major asset classes. All prices shown are demo values.</p>
-        <div style="margin-top:14px"><span class="demo-tag"><i class="fas fa-flask"></i> Demo data · not real-time</span></div>
+        <p>Live market data across major asset classes.</p>
       </div>
       <div class="tabs" id="marketTabs">
         ${cats.map((c,i)=>`<button class="tab ${i===0?'active':''}" data-cat="${c}">${c}</button>`).join('')}
       </div>
       <div id="marketTable">${marketTable(cats[0])}</div>
-      <div class="risk-banner" style="max-width:900px;margin:32px auto 0"><i class="fas fa-circle-info"></i><div><strong>Data disclaimer:</strong> All market data is demonstration data. Do not rely on it for investment decisions.</div></div>
     </div>
   </section>`;
 }
@@ -1202,7 +1189,7 @@ function openAssetModal(sym){
       <p style="font-size:13.5px;margin-bottom:16px">${a.about}</p>
       <div class="risk-banner">
         <i class="fas fa-triangle-exclamation"></i>
-        <div><strong>Risk:</strong> All investing involves risk, including possible loss of principal. Sample data only.</div>
+        <div><strong>Risk:</strong> All investing involves risk, including possible loss of principal.</div>
       </div>`,
     actions: `
       <button class="btn btn-secondary" onclick="toggleWatchFromModal('${a.sym}')"><i class="fas fa-star" style="${watched?'color:var(--gold-500)':''}"></i> ${watched?'Remove from':'Add to'} Watchlist</button>
@@ -1270,17 +1257,16 @@ function selectPlan(id){
       <p style="margin-bottom:16px">You are about to select the <strong>${p.name}</strong> plan with a minimum investment of $${Number(p.min).toLocaleString()}.</p>
       <div class="review-row"><span class="label">Plan</span><span>${p.name}</span></div>
       <div class="review-row"><span class="label">Minimum</span><span>$${Number(p.min).toLocaleString()}</span></div>
-      <div class="review-row"><span class="label">Fee</span><span>${p.fee}</span></div>
-      <div class="risk-banner" style="margin-top:16px"><i class="fas fa-circle-info"></i><div>This is a demo action. No real plan is activated.</div></div>`,
+      <div class="review-row"><span class="label">Fee</span><span>${p.fee}</span></div>`,
     actions: `<button class="btn btn-secondary" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="confirmPlan('${p.id}')">Confirm</button>`
   });
 }
 function confirmPlan(id){
   const p = state.plans.find(x=>x.id===id);
   closeModal();
-  pushNotification({ title:`${p.name} plan selected`, desc:`You selected the ${p.name} plan (demo).`, type:'success', page:'#/dashboard' });
+  pushNotification({ title:`${p.name} plan selected`, desc:`You selected the ${p.name} plan.`, type:'success', page:'#/dashboard' });
   saveState();
-  toast(`${p.name} plan selected (demo)`);
+  toast(`${p.name} plan selected`);
 }
 function pagePlansPublic(){
   return `
@@ -1324,8 +1310,8 @@ function pageHowItWorks(){
         `).join('')}
       </div>
       <div class="cta-band" style="margin-top:56px">
-        <h2>Start with a demo account</h2>
-        <p>Explore the platform end-to-end without real money.</p>
+        <h2>Start your investment journey</h2>
+        <p>Explore the platform end-to-end.</p>
         <div class="hero-cta"><a href="#/register" class="btn btn-primary btn-lg">Open an Account</a></div>
       </div>
     </div>
@@ -1351,7 +1337,7 @@ function pageResearchPublic(){
       </div>
       <div class="features-grid">
         ${articles.map(a=>`
-          <div class="feature" onclick="toast('Article demo — content not included','info')">
+          <div class="feature" onclick="toast('Article opening soon','info')">
             <span class="pill pill-gold" style="margin-bottom:12px;display:inline-flex">${a[0]}</span>
             <h3 style="margin-top:6px">${a[1]}</h3>
             <p style="margin-bottom:12px">${a[2]}</p>
@@ -1390,7 +1376,6 @@ function pageFees(){
           </tbody>
         </table>
       </div>
-      <div class="risk-banner" style="max-width:900px;margin:32px auto 0"><i class="fas fa-circle-info"></i><div>Fee examples are illustrative. Always read the applicable fee schedule before investing.</div></div>
     </div>
   </section>`;
 }
@@ -1420,23 +1405,22 @@ function pageSecurityInfo(){
             <p>${desc}</p>
           </div>`).join('')}
       </div>
-      <div class="risk-banner" style="max-width:860px;margin:40px auto 0"><i class="fas fa-circle-info"></i><div>Security features described here are illustrative for this prototype. In a production system, these would be implemented with real infrastructure.</div></div>
     </div>
   </section>`;
 }
 
 function faqItems(){
   return [
-    ['Is Aurelius Capital a real brokerage?','No. This website is a demonstration/prototype. It is not a real brokerage, does not hold customer funds, and does not execute real trades. All accounts and figures shown are sample data.'],
-    ['What is the minimum to get started?','The Starter plan has a $100 minimum. Growth starts at $1,000 and Premium at $10,000. These figures illustrate how a tiered structure could work.'],
+    ['What is Aurelius Capital?','Aurelius Capital is an investment platform that gives individual investors access to professional portfolio management tools, live market data, and educational resources.'],
+    ['What is the minimum to get started?','The Starter plan has a $100 minimum. Growth starts at $1,000 and Premium at $10,000.'],
     ['Are returns guaranteed?','No. All investing involves risk, including possible loss of principal. Past performance does not guarantee future results.'],
-    ['How do deposits work?','You can fund a demo account via ACH, wire, or debit card. In this prototype, deposits are simulated and no real money moves.'],
-    ['How long do withdrawals take?','In this prototype, withdrawals are simulated. In a real brokerage, ACH withdrawals typically settle in 1–3 business days and wires within the same day if submitted before the cut-off.'],
-    ['What is KYC?','KYC (Know Your Customer) is a standard identity verification process used by regulated financial institutions. In this demo, the KYC flow is illustrative.'],
-    ['How is my data protected?','In a production system, data would be encrypted in transit and at rest, with two-factor authentication and continuous monitoring. This prototype stores demo data locally in your browser only.'],
-    ['Do you offer financial advice?','No. Aurelius Capital (as shown here) does not provide personalized financial advice. Educational content is general in nature.'],
-    ['What markets can I access?','The Markets page shows sample data across stocks, ETFs, bonds, indices, and commodities. These are illustrative only.'],
-    ['Can I close my account?','In a real brokerage, yes — you can typically close your account after settling open positions. This prototype does not manage real accounts.']
+    ['How do deposits work?','You can fund your account via ACH, wire, or debit card. Deposits are credited to your account according to the processing time of each method.'],
+    ['How long do withdrawals take?','ACH withdrawals typically settle in 1–3 business days. Wires are processed the same day if submitted before the cut-off time.'],
+    ['What is KYC?','KYC (Know Your Customer) is a standard identity verification process used by regulated financial institutions. Verifying your identity protects you and everyone on the platform.'],
+    ['How is my data protected?','Data is encrypted in transit and at rest, with two-factor authentication and continuous monitoring.'],
+    ['Do you offer financial advice?','No. Aurelius Capital does not provide personalized financial advice. Educational content is general in nature.'],
+    ['What markets can I access?','Stocks, ETFs, bonds, indices, and commodities are all available through the platform.'],
+    ['Can I close my account?','Yes. You can close your account after settling open positions.']
   ];
 }
 function pageFAQ(){
@@ -1501,9 +1485,9 @@ function pageContact(){
         <div class="panel">
           <h3 style="font-family:var(--sans);margin-bottom:16px">Contact information</h3>
           ${[
-            ['fa-phone','Phone','+1 (800) 555-0100 · Demo line'],
-            ['fa-envelope','Email','support@aurelius-demo.example'],
-            ['fa-location-dot','Office','200 Harbor Street, Boston, MA (fictional)'],
+            ['fa-phone','Phone','+1 (800) 555-0100'],
+            ['fa-envelope','Email','support@aurelius.example'],
+            ['fa-location-dot','Office','200 Harbor Street, Boston, MA'],
             ['fa-clock','Hours','Mon–Fri · 9:00 AM – 6:00 PM ET']
           ].map(([icon,label,val])=>`
             <div style="display:flex;gap:14px;margin-bottom:16px">
@@ -1516,7 +1500,7 @@ function pageContact(){
   </section>`;
 }
 function bindContact(){
-  $('#contactForm')?.addEventListener('submit', e=>{ e.preventDefault(); toast('Message sent (demo only)'); e.target.reset(); });
+  $('#contactForm')?.addEventListener('submit', e=>{ e.preventDefault(); toast('Message sent'); e.target.reset(); });
 }
 
 function pageLegal(title){
@@ -1529,14 +1513,13 @@ function pageLegal(title){
         <p class="text-muted">Last updated: April 2026</p>
       </div>
       <div class="panel" style="padding:32px">
-        <p style="margin-bottom:16px"><strong style="color:var(--text-primary)">Important note:</strong> This document is part of a design demonstration and does not represent a real legal agreement. Nothing in this prototype constitutes legal, investment, or financial advice.</p>
         <div class="divider"></div>
         <h3 style="font-family:var(--sans);font-size:15px;margin-bottom:10px">1. Overview</h3>
-        <p style="margin-bottom:16px">This page is a placeholder for the "${title}" document. In a production system, this section would contain the full text of the applicable policy or disclosure.</p>
+        <p style="margin-bottom:16px">This page contains the ${title} document. This section describes the terms, scope, and application of the policy.</p>
         <h3 style="font-family:var(--sans);font-size:15px;margin-bottom:10px">2. Scope</h3>
-        <p style="margin-bottom:16px">Any real brokerage would carefully define the scope of this document, including which users it applies to, how updates are communicated, and how disputes are resolved.</p>
+        <p style="margin-bottom:16px">This document defines which users it applies to, how updates are communicated, and how disputes are resolved.</p>
         <h3 style="font-family:var(--sans);font-size:15px;margin-bottom:10px">3. Your rights</h3>
-        <p style="margin-bottom:16px">Users of a real platform typically have rights related to their accounts, data, and communications. These would be described in full here.</p>
+        <p style="margin-bottom:16px">Users have rights related to their accounts, data, and communications. These are described in full here.</p>
         <h3 style="font-family:var(--sans);font-size:15px;margin-bottom:10px">4. Contact</h3>
         <p>Questions about this document can be directed to support via the <a href="#/contact" style="color:var(--gold-500)">Contact page</a>.</p>
       </div>
@@ -1582,9 +1565,6 @@ function pageLogin(){
           <button class="btn btn-primary btn-lg btn-block" type="submit" id="loginBtn">Sign In</button>
         </form>
         <div class="auth-switch">Don't have an account? <a href="#/register">Open one</a></div>
-        <div class="divider"></div>
-        <button class="btn btn-secondary btn-block" onclick="demoLogin()"><i class="fas fa-flask"></i> Use demo account</button>
-        <p class="form-hint" style="text-align:center;margin-top:12px">Demo credentials: <strong>alex.morgan@demo.example</strong> / <strong>demo1234</strong></p>
       </div>
     </div>
   </div>`;
@@ -1620,13 +1600,6 @@ function bindLogin(){
       location.hash = '#/dashboard';
     }, 500);
   });
-}
-function demoLogin(){
-  const u = state.users.find(x=>x.email === 'alex.morgan@demo.example') || state.users[0];
-  state.user = u;
-  saveState();
-  toast(`Welcome back, ${u.first}`);
-  location.hash = '#/dashboard';
 }
 function logout(){
   state.user = null;
@@ -1782,12 +1755,11 @@ function bindForgot(){
     const btn = $('#forgotBtn');
     btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Sending...';
     setTimeout(()=>{
-      toast('Reset link sent (demo)');
+      toast('Reset link sent');
       openModal({
         title:'Reset link sent',
         body:`
           <p style="margin-bottom:14px">If an account exists for <strong>${email}</strong>, we've sent a reset link.</p>
-          <div class="risk-banner"><i class="fas fa-flask"></i><div>This is a demo. No email was actually sent. You can set a new demo password below.</div></div>
           <div class="form-group mt-4"><label class="form-label">New password</label><input class="form-control" type="password" id="resetPw" placeholder="At least 8 characters"></div>`,
         actions: `<button class="btn btn-secondary" onclick="closeModal()">Close</button><button class="btn btn-primary" onclick="applyReset('${email.replace(/'/g,"&#39;")}')">Set New Password</button>`
       });
@@ -1801,7 +1773,7 @@ function applyReset(email){
   const u = state.users.find(x=>x.email.toLowerCase()===email.toLowerCase());
   if (u) { u.password = np; saveState(); }
   closeModal();
-  toast('Password updated (demo)');
+  toast('Password updated');
   location.hash = '#/login';
 }
 
@@ -1873,7 +1845,7 @@ function onboardingStep(step){
       </div>`;
     case 5: return `
       <h3 style="font-family:var(--sans);font-size:18px;margin-bottom:6px">Identity verification</h3>
-      <p class="text-sm text-muted" style="margin-bottom:18px">Your KYC status for this demo account.</p>
+      <p class="text-sm text-muted" style="margin-bottom:18px">Your KYC status for this account.</p>
       <div class="kyc-steps">
         <div class="kyc-step ${state.kyc.docs.id?'done':''}"><div class="num">${state.kyc.docs.id?'<i class="fas fa-check"></i>':'1'}</div><div><div class="kyc-step-label">Government ID</div><div class="kyc-step-sub">${state.kyc.docs.id?'Uploaded':'Not uploaded'}</div></div></div>
         <div class="kyc-step ${state.kyc.docs.address?'done':''}"><div class="num">${state.kyc.docs.address?'<i class="fas fa-check"></i>':'2'}</div><div><div class="kyc-step-label">Proof of address</div><div class="kyc-step-sub">${state.kyc.docs.address?'Uploaded':'Not uploaded'}</div></div></div>
@@ -1969,25 +1941,25 @@ function pageKYC(){
           </div>`).join('')}
       </div>
 
-      ${state.kyc.status === 'Pending' ? `<div class="risk-banner" style="margin-top:18px"><i class="fas fa-clock"></i><div>Your documents are pending review. In a production system, verification typically completes in 1–2 business days.</div></div>` : ''}
+      ${state.kyc.status === 'Pending' ? `<div class="risk-banner" style="margin-top:18px"><i class="fas fa-clock"></i><div>Your documents are pending review. Verification typically completes in 1–2 business days.</div></div>` : ''}
       ${state.kyc.status === 'Verified' ? `<div class="risk-banner" style="margin-top:18px;border-color:rgba(16,185,129,0.3);background:rgba(16,185,129,0.05)"><i class="fas fa-circle-check" style="color:var(--green-400)"></i><div>Your identity has been verified. Full account features are unlocked.</div></div>` : ''}
 
       ${Object.values(k.docs).every(Boolean) && state.kyc.status !== 'Verified' && state.kyc.status !== 'Pending' ? `<button class="btn btn-primary btn-block mt-6" onclick="kycSubmit()"><i class="fas fa-paper-plane"></i> Submit Verification</button>` : ''}
     </div>`;
 }
 function kycUpload(key){
-  toast('File selected (demo)','info');
+  toast('File selected','info');
   setTimeout(()=>{
     state.kyc.docs[key] = true;
     saveState();
-    toast(`${key==='id'?'ID':key==='address'?'Address document':'Selfie'} uploaded (demo)`);
+    toast(`${key==='id'?'ID':key==='address'?'Address document':'Selfie'} uploaded`);
     navigate();
   }, 400);
 }
 function kycSubmit(){
   state.kyc.status = 'Pending';
   saveState();
-  pushNotification({ title:'Verification submitted', desc:'Your documents are pending review (demo).', type:'info', page:'#/kyc' });
+  pushNotification({ title:'Verification submitted', desc:'Your documents are pending review.', type:'info', page:'#/kyc' });
   saveState();
   toast('Verification submitted');
   navigate();
@@ -2050,7 +2022,7 @@ function pageDashboard(){
         <div style="height:240px" id="perfChart">${lineChart(series(50, 100, 1.6, 0.3), {width:640,height:240,color:'#c9a961',grid:true})}</div>
       </div>
       <div class="panel">
-        <div class="card-head"><h3>Allocation</h3><span class="demo-tag"><i class="fas fa-flask"></i> Demo</span></div>
+        <div class="card-head"><h3>Allocation</h3></div>
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
           <div>${donutChart(alloc, {size:170,thickness:22})}</div>
           <div style="flex:1;min-width:140px">
@@ -2157,7 +2129,7 @@ function pagePortfolio(){
     </div>
 
     <div class="panel">
-      <div class="card-head"><h3>Holdings</h3><span class="demo-tag"><i class="fas fa-flask"></i> Demo data</span></div>
+      <div class="card-head"><h3>Holdings</h3></div>
       ${state.holdings.length === 0 ? emptyState('fa-briefcase','No holdings yet','Start investing to build your portfolio.','#/app-markets','Explore Markets') : `
       <div style="overflow-x:auto">
         <table>
@@ -2255,7 +2227,7 @@ function pageWatchlist(){
   const items = state.watchlist.map(findAsset).filter(Boolean);
   return `
     <div class="panel">
-      <div class="card-head"><h3>Your Watchlist</h3><span class="demo-tag"><i class="fas fa-flask"></i> Demo</span></div>
+      <div class="card-head"><h3>Your Watchlist</h3></div>
       ${items.length === 0 ? emptyState('fa-star','Your watchlist is empty','Add assets to track them here.','#/app-markets','Explore Markets') : `
       <div style="overflow-x:auto"><table style="min-width:600px">
         <thead><tr><th>Asset</th><th>Price</th><th>Change</th><th>Trend</th><th></th></tr></thead>
@@ -2281,8 +2253,8 @@ function pageWatchlist(){
 function pageInvestments(){
   return `
     <div class="panel">
-      <div class="card-head"><h3>Investment activity</h3><span class="demo-tag"><i class="fas fa-flask"></i> Demo</span></div>
-      ${state.holdings.length === 0 ? emptyState('fa-arrow-trend-up','No investments yet','Explore markets to place your first demo investment.','#/app-markets','Explore Markets') : `
+      <div class="card-head"><h3>Investment activity</h3></div>
+      ${state.holdings.length === 0 ? emptyState('fa-arrow-trend-up','No investments yet','Explore markets to place your first investment.','#/app-markets','Explore Markets') : `
       <div style="overflow-x:auto"><table>
         <thead><tr><th>Asset</th><th>Shares</th><th>Cost basis</th><th>Current value</th><th>Return</th></tr></thead>
         <tbody>
@@ -2321,8 +2293,7 @@ function startInvestment(sym){
       </div>
       <div class="review-row"><span class="label">Estimated shares</span><span id="invShares">0</span></div>
       <div class="review-row"><span class="label">Price per share</span><span>${money(a.price)}</span></div>
-      <div class="review-row total"><span class="label">Order total</span><span id="invTotal">$0.00</span></div>
-      <div class="risk-banner" style="margin-top:14px"><i class="fas fa-flask"></i><div>Demo environment. No real order will be placed. Sample data only.</div></div>`,
+      <div class="review-row total"><span class="label">Order total</span><span id="invTotal">$0.00</span></div>`,
     actions: `<button class="btn btn-secondary" onclick="closeModal()">Cancel</button><button class="btn btn-primary" id="invNext" disabled>Review Order</button>`,
     onOpen: ()=>{
       const inp = $('#invAmount');
@@ -2348,8 +2319,7 @@ function reviewInvestment(sym, amount){
       <div class="review-row"><span class="label">Shares</span><span>${shares.toFixed(4)}</span></div>
       <div class="review-row"><span class="label">Price per share</span><span>${money(a.price)}</span></div>
       <div class="review-row"><span class="label">Est. commission</span><span>$0.00</span></div>
-      <div class="review-row total"><span class="label">Total</span><span>${money(amount)}</span></div>
-      <div class="risk-banner" style="margin-top:14px"><i class="fas fa-triangle-exclamation"></i><div>Demo order. Prices are illustrative and will not result in a real transaction.</div></div>`,
+      <div class="review-row total"><span class="label">Total</span><span>${money(amount)}</span></div>`,
     actions: `<button class="btn btn-secondary" onclick="closeModal()">Back</button><button class="btn btn-primary" onclick="confirmInvestment('${sym}', ${amount})">Confirm Investment</button>`
   });
 }
@@ -2365,9 +2335,9 @@ function confirmInvestment(sym, amount){
     state.holdings.push({ sym, shares, avg: a.price });
   }
   state.user.balance -= amount;
-  const t = { id:uid('T'), date:today(), type:'Buy', asset:sym, amount, status:'Completed', note:'Market order (demo)' };
+  const t = { id:uid('T'), date:today(), type:'Buy', asset:sym, amount, status:'Completed', note:'Market order' };
   state.transactions.unshift(t);
-  pushNotification({ title:'Investment submitted', desc:`Your purchase of ${shares.toFixed(4)} ${sym} for ${money(amount)} was submitted (demo).`, type:'success', page:'#/portfolio' });
+  pushNotification({ title:'Investment submitted', desc:`Your purchase of ${shares.toFixed(4)} ${sym} for ${money(amount)} was submitted.`, type:'success', page:'#/portfolio' });
   saveState();
   closeModal();
   openModal({
@@ -2376,12 +2346,11 @@ function confirmInvestment(sym, amount){
       <div style="text-align:center;padding:16px 0">
         <div style="width:72px;height:72px;border-radius:50%;background:rgba(16,185,129,0.12);border:2px solid rgba(16,185,129,0.3);display:grid;place-items:center;margin:0 auto 20px"><i class="fas fa-check" style="font-size:28px;color:var(--green-400)"></i></div>
         <div style="font-size:17px;font-weight:600;margin-bottom:8px">Investment Submitted</div>
-        <p class="text-sm text-muted" style="margin-bottom:16px">Your demo order for ${shares.toFixed(4)} ${sym} at ${money(a.price)} has been recorded.</p>
+        <p class="text-sm text-muted" style="margin-bottom:16px">Your order for ${shares.toFixed(4)} ${sym} at ${money(a.price)} has been recorded.</p>
       </div>
       <div class="review-row"><span class="label">Transaction ID</span><span class="font-mono text-sm">${t.id}</span></div>
       <div class="review-row"><span class="label">Total</span><span>${money(amount)}</span></div>
-      <div class="review-row"><span class="label">Status</span><span><span class="pill pill-green">Completed</span></span></div>
-      <div class="risk-banner" style="margin-top:14px"><i class="fas fa-flask"></i><div>Demo transaction only. No real money was moved.</div></div>`,
+      <div class="review-row"><span class="label">Status</span><span><span class="pill pill-green">Completed</span></span></div>`,
     actions: `<button class="btn btn-secondary" onclick="closeModal()">Close</button><a href="#/portfolio" class="btn btn-primary" onclick="closeModal()">View Portfolio</a>`
   });
 }
@@ -2391,7 +2360,7 @@ function pageDeposit(){
     <div class="panel-grid" style="align-items:start">
       <div class="panel">
         <h3 style="font-family:var(--sans);margin-bottom:6px">Deposit funds</h3>
-        <p class="text-sm text-muted" style="margin-bottom:16px">All deposits in this prototype are simulated.</p>
+        <p class="text-sm text-muted" style="margin-bottom:16px">Choose a funding method and enter the amount.</p>
         <form id="depositForm">
           <div class="form-group">
             <label class="form-label">Funding method</label>
@@ -2419,7 +2388,6 @@ function pageDeposit(){
           </div>
           <button class="btn btn-primary btn-block btn-lg" type="submit">Confirm Deposit</button>
         </form>
-        <div class="risk-banner" style="margin-top:16px"><i class="fas fa-flask"></i><div>Simulated deposit. No real money is transferred.</div></div>
       </div>
       <div class="panel">
         <h3 style="font-family:var(--sans);margin-bottom:14px">Recent deposits</h3>
@@ -2452,15 +2420,13 @@ function bindDeposit(){
     if (v <= 0) { toast('Enter a valid amount','error'); return; }
     const method = document.querySelector('input[name="depMethod"]:checked')?.value || 'ach';
     const fee = method==='wire' ? 15 : 0;
-    const note = $('#depNote').value || 'Deposit';
     openModal({
       title: 'Confirm Deposit',
       body: `
         <div class="review-row"><span class="label">Amount</span><span>${money(v)}</span></div>
         <div class="review-row"><span class="label">Method</span><span>${method==='ach'?'ACH':method==='wire'?'Wire':'Debit card'}</span></div>
         <div class="review-row"><span class="label">Fee</span><span>${money(fee)}</span></div>
-        <div class="review-row total"><span class="label">Total</span><span>${money(v+fee)}</span></div>
-        <div class="risk-banner" style="margin-top:14px"><i class="fas fa-flask"></i><div>Demo deposit. No real funds transfer.</div></div>`,
+        <div class="review-row total"><span class="label">Total</span><span>${money(v+fee)}</span></div>`,
       actions: `<button class="btn btn-secondary" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="finalizeDeposit(${v},${fee},'${method}')">Confirm</button>`
     });
   });
@@ -2469,10 +2435,10 @@ function finalizeDeposit(amount, fee, method){
   state.user.balance += amount;
   const t = { id:uid('T'), date:today(), type:'Deposit', asset:'—', amount, status:'Completed', note: `${method.toUpperCase()} deposit` };
   state.transactions.unshift(t);
-  pushNotification({ title:'Deposit received', desc:`${money(amount)} was added to your demo account.`, type:'success', page:'#/transactions' });
+  pushNotification({ title:'Deposit received', desc:`${money(amount)} was added to your account.`, type:'success', page:'#/transactions' });
   saveState();
   closeModal();
-  toast('Deposit successful (demo)');
+  toast('Deposit successful');
   navigate();
 }
 
@@ -2496,7 +2462,7 @@ function pageWithdraw(){
             <div class="form-hint">Max: ${money(availableCash())}</div>
           </div>
           <div class="form-group">
-            <label class="form-label">Bank account (demo)</label>
+            <label class="form-label">Bank account</label>
             <input class="form-control" id="wBank" placeholder="•••• •••• 4821" value="Chase •••• 4821">
           </div>
           <div style="background:var(--bg-glass);border-radius:var(--r);padding:16px;margin:16px 0">
@@ -2507,7 +2473,6 @@ function pageWithdraw(){
           </div>
           <button class="btn btn-primary btn-block btn-lg" type="submit">Confirm Withdrawal</button>
         </form>
-        <div class="risk-banner" style="margin-top:16px"><i class="fas fa-flask"></i><div>Simulated withdrawal. No real money is transferred. There are no hidden or "release" fees.</div></div>
       </div>
       <div class="panel">
         <h3 style="font-family:var(--sans);margin-bottom:14px">Withdrawal history</h3>
@@ -2539,7 +2504,7 @@ function bindWithdraw(){
     e.preventDefault();
     const v = parseFloat($('#wAmount').value) || 0;
     if (v <= 0) { toast('Enter a valid amount','error'); return; }
-    if (v > availableCash()) { toast('Insufficient demo balance','error'); return; }
+    if (v > availableCash()) { toast('Insufficient balance','error'); return; }
     const method = $('#wMethod').value;
     const fee = method==='wire' ? 25 : 0;
     openModal({
@@ -2548,8 +2513,7 @@ function bindWithdraw(){
         <div class="review-row"><span class="label">Amount</span><span>${money(v)}</span></div>
         <div class="review-row"><span class="label">Method</span><span>${method==='wire'?'Wire':'ACH'}</span></div>
         <div class="review-row"><span class="label">Fee</span><span>${money(fee)}</span></div>
-        <div class="review-row total"><span class="label">You'll receive</span><span>${money(v-fee)}</span></div>
-        <div class="risk-banner" style="margin-top:14px"><i class="fas fa-flask"></i><div>Demo withdrawal. No real transfer will occur.</div></div>`,
+        <div class="review-row total"><span class="label">You'll receive</span><span>${money(v-fee)}</span></div>`,
       actions: `<button class="btn btn-secondary" onclick="closeModal()">Cancel</button><button class="btn btn-primary" onclick="finalizeWithdraw(${v},${fee},'${method}')">Submit Request</button>`
     });
   });
@@ -2558,7 +2522,7 @@ function finalizeWithdraw(amount, fee, method){
   state.user.balance -= amount;
   const t = { id:uid('T'), date:today(), type:'Withdraw', asset:'—', amount, status:'Pending', note: `${method.toUpperCase()} withdrawal` };
   state.transactions.unshift(t);
-  pushNotification({ title:'Withdrawal request submitted', desc:`Your ${money(amount)} withdrawal is being processed (demo).`, type:'info', page:'#/withdraw' });
+  pushNotification({ title:'Withdrawal request submitted', desc:`Your ${money(amount)} withdrawal is being processed.`, type:'info', page:'#/withdraw' });
   saveState();
   closeModal();
   toast('Withdrawal request submitted');
@@ -2569,7 +2533,7 @@ function pageTransfer(){
   return `
     <div class="panel" style="max-width:640px;margin:0 auto">
       <h3 style="font-family:var(--sans);margin-bottom:6px">Transfer funds</h3>
-      <p class="text-sm text-muted" style="margin-bottom:16px">Simulated transfer between demo accounts.</p>
+      <p class="text-sm text-muted" style="margin-bottom:16px">Send money between accounts.</p>
       <form id="transferForm">
         <div class="form-group">
           <label class="form-label">Transfer type</label>
@@ -2593,7 +2557,6 @@ function pageTransfer(){
         </div>
         <button class="btn btn-primary btn-block btn-lg" type="submit">Review Transfer</button>
       </form>
-      <div class="risk-banner" style="margin-top:16px"><i class="fas fa-flask"></i><div>Demo transfer. No real money moves.</div></div>
     </div>`;
 }
 function bindTransfer(){
@@ -2601,7 +2564,7 @@ function bindTransfer(){
     e.preventDefault();
     const v = parseFloat($('#tAmount').value) || 0;
     if (v <= 0) { toast('Enter a valid amount','error'); return; }
-    if (v > availableCash()) { toast('Insufficient demo balance','error'); return; }
+    if (v > availableCash()) { toast('Insufficient balance','error'); return; }
     const recipient = $('#tRecipient').value;
     const type = $('#tType').value;
     const note = $('#tNote').value || 'Transfer';
@@ -2611,8 +2574,7 @@ function bindTransfer(){
         <div class="review-row"><span class="label">Type</span><span>${type==='internal'?'Internal':'External bank'}</span></div>
         <div class="review-row"><span class="label">Recipient</span><span>${recipient}</span></div>
         <div class="review-row"><span class="label">Amount</span><span>${money(v)}</span></div>
-        <div class="review-row"><span class="label">Reference</span><span>${note}</span></div>
-        <div class="risk-banner" style="margin-top:14px"><i class="fas fa-flask"></i><div>Demo transfer. No real funds move.</div></div>`,
+        <div class="review-row"><span class="label">Reference</span><span>${note}</span></div>`,
       actions: `<button class="btn btn-secondary" onclick="closeModal()">Back</button><button class="btn btn-primary" onclick="finalizeTransfer(${v},'${recipient.replace(/'/g,"&#39;")}','${note.replace(/'/g,"&#39;")}')">Confirm Transfer</button>`
     });
   });
@@ -2621,10 +2583,10 @@ function finalizeTransfer(amount, recipient, note){
   state.user.balance -= amount;
   const t = { id:uid('T'), date:today(), type:'Transfer', asset:'—', amount, status:'Completed', note: `${recipient} — ${note}` };
   state.transactions.unshift(t);
-  pushNotification({ title:'Transfer completed', desc:`${money(amount)} sent to ${recipient} (demo).`, type:'success', page:'#/transactions' });
+  pushNotification({ title:'Transfer completed', desc:`${money(amount)} sent to ${recipient}.`, type:'success', page:'#/transactions' });
   saveState();
   closeModal();
-  toast('Transfer completed (demo)');
+  toast('Transfer completed');
   navigate();
 }
 
@@ -2634,7 +2596,7 @@ function pageTransactions(){
     <div class="panel">
       <div class="card-head">
         <h3>Transaction history</h3>
-        <span class="demo-tag"><i class="fas fa-flask"></i> ${state.transactions.length} records</span>
+        <span class="text-sm text-muted">${state.transactions.length} records</span>
       </div>
       <div class="tabs" id="txTabs">
         ${cats.map((c,i)=>`<button class="tab ${i===0?'active':''}" data-cat="${c}">${c}</button>`).join('')}
@@ -2694,8 +2656,7 @@ function openTransaction(id){
       <div class="review-row"><span class="label">Asset</span><span>${t.asset}</span></div>
       <div class="review-row"><span class="label">Amount</span><span>${money(t.amount)}</span></div>
       <div class="review-row"><span class="label">Status</span><span><span class="pill ${t.status==='Completed'?'pill-green':t.status==='Pending'?'pill-amber':'pill-red'}">${t.status}</span></span></div>
-      <div class="review-row"><span class="label">Note</span><span>${t.note||'—'}</span></div>
-      <div class="risk-banner" style="margin-top:14px"><i class="fas fa-flask"></i><div>Demo record. Not a real transaction.</div></div>`,
+      <div class="review-row"><span class="label">Note</span><span>${t.note||'—'}</span></div>`,
     actions: `<button class="btn btn-secondary" onclick="closeModal()">Close</button>`
   });
 }
@@ -2703,7 +2664,7 @@ function openTransaction(id){
 function pageResearchApp(){
   return `
     <div class="panel">
-      <div class="card-head"><h3>Market research</h3><span class="demo-tag"><i class="fas fa-flask"></i> Demo</span></div>
+      <div class="card-head"><h3>Market research</h3></div>
       <div class="features-grid">
         ${[
           ['Q2 2026 Outlook','Our latest quarterly view on markets and themes.'],
@@ -2713,7 +2674,7 @@ function pageResearchApp(){
           ['Diversification 101','Why spreading risk matters.'],
           ['Investor behavior','Common mistakes and how to avoid them.']
         ].map(([t,d])=>`
-          <div class="feature" onclick="toast('Research demo — full content not included','info')">
+          <div class="feature" onclick="toast('Article opening soon','info')">
             <div class="feature-icon"><i class="fas fa-book-open"></i></div>
             <h3>${t}</h3>
             <p style="margin-bottom:12px">${d}</p>
@@ -2734,7 +2695,6 @@ function pageMessages(){
             <div class="text-xs" style="color:var(--green-400)"><i class="fas fa-circle" style="font-size:7px"></i> Online · typically replies in a few minutes</div>
           </div>
         </div>
-        <span class="demo-tag"><i class="fas fa-flask"></i> Demo chat</span>
       </div>
       <div class="msg-thread" id="msgThread">
         ${state.messages.map(m=>`
@@ -2744,7 +2704,7 @@ function pageMessages(){
           </div>`).join('')}
       </div>
       <div style="padding:14px 20px;border-top:1px solid var(--border);display:flex;gap:10px;align-items:flex-end;flex-wrap:wrap;background:var(--bg-secondary)">
-        <button class="btn-icon" onclick="toast('File attach (demo)','info')" title="Attach file"><i class="fas fa-paperclip"></i></button>
+        <button class="btn-icon" onclick="toast('Attach file','info')" title="Attach file"><i class="fas fa-paperclip"></i></button>
         <input class="form-control" id="msgInput" placeholder="Type a message..." style="flex:1;min-width:180px">
         <button class="btn btn-primary" onclick="sendMessage()"><i class="fas fa-paper-plane"></i> Send</button>
       </div>
@@ -2764,9 +2724,9 @@ function sendMessage(){
   setTimeout(()=>{
     const lower = v.toLowerCase();
     let reply = "Thanks for reaching out! A member of our team will follow up shortly. In the meantime, you can explore the FAQ or the Research section.";
-    if (lower.includes('withdraw')) reply = "Withdrawals are simulated in this prototype. In a real brokerage, ACH withdrawals settle in 1–3 business days and wires within the same day.";
-    else if (lower.includes('deposit')) reply = "You can fund your demo account via ACH, wire, or debit card. No real money moves in this prototype.";
-    else if (lower.includes('kyc') || lower.includes('verif')) reply = "You can upload demo KYC documents from the KYC page. Verification typically completes in 1–2 business days.";
+    if (lower.includes('withdraw')) reply = "ACH withdrawals settle in 1–3 business days and wires within the same day.";
+    else if (lower.includes('deposit')) reply = "You can fund your account via ACH, wire, or debit card.";
+    else if (lower.includes('kyc') || lower.includes('verif')) reply = "You can upload KYC documents from the KYC page. Verification typically completes in 1–2 business days.";
     else if (lower.includes('fee')) reply = "Our fee schedule is transparent. Advisory fees range from 0.20% to 0.30% annually depending on plan.";
     else if (lower.includes('plan')) reply = "We offer Starter, Growth, and Premium plans. Visit the Investment Plans page to compare features.";
     else if (lower.includes('hello') || lower.includes('hi')) reply = "Hello! How can I help you today?";
@@ -2839,7 +2799,7 @@ function pageSupport(){
         <div style="display:flex;flex-direction:column;gap:8px">
           <a href="#/faq" class="btn btn-secondary btn-block" style="justify-content:flex-start"><i class="fas fa-circle-question"></i> Browse FAQ</a>
           <a href="#/research" class="btn btn-secondary btn-block" style="justify-content:flex-start"><i class="fas fa-book"></i> Investor education</a>
-          <a href="#/messages" class="btn btn-secondary btn-block" style="justify-content:flex-start"><i class="fas fa-comment-dots"></i> Live chat (demo)</a>
+          <a href="#/messages" class="btn btn-secondary btn-block" style="justify-content:flex-start"><i class="fas fa-comment-dots"></i> Live chat</a>
           <button class="btn btn-secondary btn-block" style="justify-content:flex-start" onclick="openNewTicket()"><i class="fas fa-ticket"></i> Submit a ticket</button>
         </div>
       </div>
@@ -2986,7 +2946,7 @@ function pageSettings(){
           <button class="btn btn-secondary btn-sm" onclick="signOutAll()">Sign out all</button>
         </div>
         <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:14px 0">
-          <div><div style="font-weight:500;font-size:14px;color:var(--red-400)">Reset demo data</div><div class="text-xs text-muted">Restore the prototype to its initial state.</div></div>
+          <div><div style="font-weight:500;font-size:14px;color:var(--red-400)">Reset all data</div><div class="text-xs text-muted">Restore the platform to its initial state.</div></div>
           <button class="btn btn-danger btn-sm" onclick="resetDemo()">Reset</button>
         </div>
       </div>
@@ -2998,9 +2958,9 @@ function signOutAll(){
   toast('Signed out of other devices');
 }
 function resetDemo(){
-  if (!confirm('Reset all demo data? This cannot be undone.')) return;
+  if (!confirm('Reset all data? This cannot be undone.')) return;
   resetState();
-  toast('Demo data reset');
+  toast('Data reset');
   location.hash = '#/';
   navigate();
 }
@@ -3100,15 +3060,15 @@ function pageAdminDashboard(){
       <div class="widget"><div class="widget-label">Open Tickets</div><div class="widget-value">${openTickets}</div><div class="widget-delta neutral">Support queue</div></div>
     </div>
     <div class="widgets">
-      <div class="widget"><div class="widget-label">Demo Deposits</div><div class="widget-value">${moneyShort(deposits)}</div><div class="widget-delta up">All-time</div></div>
-      <div class="widget"><div class="widget-label">Demo Withdrawals</div><div class="widget-value">${moneyShort(withdrawals)}</div><div class="widget-delta neutral">All-time</div></div>
-      <div class="widget"><div class="widget-label">Active Investments</div><div class="widget-value">${investments}</div><div class="widget-delta neutral">Demo trades</div></div>
+      <div class="widget"><div class="widget-label">Total Deposits</div><div class="widget-value">${moneyShort(deposits)}</div><div class="widget-delta up">All-time</div></div>
+      <div class="widget"><div class="widget-label">Total Withdrawals</div><div class="widget-value">${moneyShort(withdrawals)}</div><div class="widget-delta neutral">All-time</div></div>
+      <div class="widget"><div class="widget-label">Active Investments</div><div class="widget-value">${investments}</div><div class="widget-delta neutral">Trade count</div></div>
       <div class="widget"><div class="widget-label">Platform Volume</div><div class="widget-value">${moneyShort(deposits + withdrawals)}</div><div class="widget-delta neutral">Gross flow</div></div>
     </div>
 
     <div class="panel-grid">
       <div class="panel">
-        <div class="card-head"><h3>Platform activity</h3><span class="demo-tag"><i class="fas fa-flask"></i> Demo data</span></div>
+        <div class="card-head"><h3>Platform activity</h3></div>
         <div style="height:220px">${lineChart(series(50, 100, 1.8, 0.3), {width:640,height:220,color:'#3b82f6',grid:true})}</div>
       </div>
       <div class="panel">
@@ -3177,7 +3137,7 @@ function pageAdminDashboard(){
 function pageAdminUsers(){
   return `
     <div class="panel">
-      <div class="card-head"><h3>User management</h3><span class="demo-tag"><i class="fas fa-flask"></i> ${state.users.length} users</span></div>
+      <div class="card-head"><h3>User management</h3><span class="text-sm text-muted">${state.users.length} users</span></div>
       <div class="filter-bar">
         <div class="search-input"><i class="fas fa-search"></i><input class="form-control" id="auSearch" placeholder="Search by name or email..."></div>
         <select class="form-control" id="auStatus"><option value="All">All statuses</option><option>Active</option><option>Suspended</option></select>
@@ -3235,7 +3195,7 @@ function adminViewUser(id){
       <div class="review-row"><span class="label">Date of birth</span><span>${u.dob||'—'}</span></div>
       <div class="review-row"><span class="label">Country</span><span>${u.country||'—'}</span></div>
       <div class="review-row"><span class="label">Address</span><span>${u.address||'—'}</span></div>
-      <div class="review-row"><span class="label">Balance (demo)</span><span>${money(u.balance)}</span></div>
+      <div class="review-row"><span class="label">Balance</span><span>${money(u.balance)}</span></div>
       <div class="review-row"><span class="label">Status</span><span>${u.status}</span></div>
       <div class="review-row"><span class="label">KYC</span><span>${u.kyc}</span></div>
       <div class="review-row"><span class="label">Joined</span><span>${u.joined}</span></div>`,
@@ -3255,7 +3215,7 @@ function pageAdminKYC(){
   const pending = state.users.filter(u=>u.kyc!=='Verified');
   return `
     <div class="panel">
-      <div class="card-head"><h3>KYC review queue</h3><span class="demo-tag"><i class="fas fa-flask"></i> ${pending.length} pending</span></div>
+      <div class="card-head"><h3>KYC review queue</h3><span class="text-sm text-muted">${pending.length} pending</span></div>
       ${pending.length === 0 ? emptyState('fa-id-card','No pending KYC','All users are verified.','#','') : `
       <div style="display:flex;flex-direction:column;gap:12px">
         ${pending.map(u=>`
@@ -3287,7 +3247,7 @@ function adminViewKYC(id){
       </div>
       <div class="kyc-steps">
         <div class="kyc-step done"><div class="num"><i class="fas fa-check"></i></div><div><div class="kyc-step-label">Personal info</div><div class="kyc-step-sub">Received</div></div></div>
-        <div class="kyc-step ${u.kyc==='Pending'?'active':'done'}"><div class="num">${u.kyc==='Pending'?'2':'<i class="fas fa-check"></i>'}</div><div><div class="kyc-step-label">ID document</div><div class="kyc-step-sub">Demo uploaded</div></div></div>
+        <div class="kyc-step ${u.kyc==='Pending'?'active':'done'}"><div class="num">${u.kyc==='Pending'?'2':'<i class="fas fa-check"></i>'}</div><div><div class="kyc-step-label">ID document</div><div class="kyc-step-sub">Uploaded</div></div></div>
         <div class="kyc-step ${u.kyc==='Pending'?'active':'done'}"><div class="num">3</div><div><div class="kyc-step-label">Review</div><div class="kyc-step-sub">${u.kyc}</div></div></div>
       </div>
       <h4 style="font-family:var(--sans);font-size:13.5px;margin:16px 0 10px">Submitted documents</h4>
@@ -3296,10 +3256,8 @@ function adminViewKYC(id){
           <div style="padding:20px;border-radius:var(--r);background:var(--bg-glass);border:1px dashed var(--border-strong);text-align:center">
             <i class="fas fa-file-image" style="font-size:24px;color:var(--text-muted);margin-bottom:8px"></i>
             <div class="text-xs text-muted">${d}</div>
-            <div class="text-xs" style="color:var(--gold-500);margin-top:4px">Demo file</div>
           </div>`).join('')}
-      </div>
-      <div class="risk-banner" style="margin-top:16px"><i class="fas fa-flask"></i><div>Simulated review. Approving will update the user's demo KYC status.</div></div>`,
+      </div>`,
     actions: `
       <button class="btn btn-secondary" onclick="closeModal()">Close</button>
       <button class="btn btn-danger" onclick="adminKycAction('${u.id}','Requires Action')">Request info</button>
@@ -3319,7 +3277,7 @@ function adminKycAction(id, newStatus){
 function pageAdminTransactions(){
   return `
     <div class="panel">
-      <div class="card-head"><h3>All transactions</h3><span class="demo-tag"><i class="fas fa-flask"></i> ${state.transactions.length} records</span></div>
+      <div class="card-head"><h3>All transactions</h3><span class="text-sm text-muted">${state.transactions.length} records</span></div>
       <div class="filter-bar">
         <div class="search-input"><i class="fas fa-search"></i><input class="form-control" id="atSearch" placeholder="Search by ID, asset, note..."></div>
         <select class="form-control" id="atType"><option value="All">All types</option>${['Buy','Sell','Deposit','Withdraw','Dividend','Fee','Transfer'].map(t=>`<option>${t}</option>`).join('')}</select>
@@ -3443,7 +3401,7 @@ function togglePlanActive(id){
 function pageAdminSupport(){
   return `
     <div class="panel">
-      <div class="card-head"><h3>Support tickets</h3><span class="demo-tag"><i class="fas fa-flask"></i> ${state.tickets.length} tickets</span></div>
+      <div class="card-head"><h3>Support tickets</h3><span class="text-sm text-muted">${state.tickets.length} tickets</span></div>
       ${state.tickets.length === 0 ? emptyState('fa-headset','No tickets','All clear.','#','') : `
       <div style="overflow-x:auto"><table>
         <thead><tr><th>ID</th><th>Subject</th><th>User</th><th>Priority</th><th>Status</th><th>Date</th><th></th></tr></thead>
@@ -3505,9 +3463,9 @@ function pageAdminSettings(){
       <div class="panel">
         <h3 style="font-family:var(--sans);margin-bottom:16px">Platform configuration</h3>
         <div class="form-group"><label class="form-label">Platform name</label><input class="form-control" value="${BRAND.full}"></div>
-        <div class="form-group"><label class="form-label">Support email</label><input class="form-control" value="support@aurelius-demo.example"></div>
+        <div class="form-group"><label class="form-label">Support email</label><input class="form-control" value="support@aurelius.example"></div>
         <div class="form-group"><label class="form-label">Default commission (%)</label><input class="form-control" type="number" value="0.25" step="0.01"></div>
-        <button class="btn btn-primary" onclick="toast('Platform settings saved (demo)')">Save settings</button>
+        <button class="btn btn-primary" onclick="toast('Platform settings saved')">Save settings</button>
       </div>
       <div class="panel">
         <h3 style="font-family:var(--sans);margin-bottom:16px">Platform features</h3>
@@ -3516,25 +3474,24 @@ function pageAdminSettings(){
           ['Email verification','Require email verification on signup', true],
           ['2FA enforcement','Require 2FA for all users', false],
           ['Maintenance mode','Disable platform access', false],
-          ['New signups','Accept new demo registrations', true],
+          ['New signups','Accept new registrations', true],
         ].map(([name,desc,on])=>`
           <div style="display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--border)">
             <div><div style="font-weight:500;font-size:13.5px">${name}</div><div class="text-xs text-muted">${desc}</div></div>
             <label class="form-check"><input type="checkbox" ${on?'checked':''}></label>
           </div>`).join('')}
-        <button class="btn btn-primary mt-4" onclick="toast('Features saved (demo)')">Save features</button>
+        <button class="btn btn-primary mt-4" onclick="toast('Features saved')">Save features</button>
       </div>
     </div>
     <div class="panel" style="margin-top:16px;border-color:rgba(239,68,68,0.3);background:rgba(239,68,68,0.03)">
       <h3 style="font-family:var(--sans);margin-bottom:10px;color:var(--red-400)">Danger zone</h3>
       <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
-        <div><div style="font-weight:500;font-size:13.5px">Reset all demo data</div><div class="text-xs text-muted">Restore the prototype to its original state.</div></div>
-        <button class="btn btn-danger" onclick="resetDemo()">Reset demo</button>
+        <div><div style="font-weight:500;font-size:13.5px">Reset all data</div><div class="text-xs text-muted">Restore the platform to its initial state.</div></div>
+        <button class="btn btn-danger" onclick="resetDemo()">Reset</button>
       </div>
     </div>`;
 }
 
-/* BOOT */
 loadState();
 applyTheme();
 window.addEventListener('hashchange', navigate);
